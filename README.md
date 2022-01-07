@@ -1,32 +1,40 @@
 # 'Professional README Generator'
 
-  ## Description
-  'This application provides users with guided questions to fill out a README template in order to simply create quality README.md files for future projects."
+## Description
 
-  ## Table of Contents
-  * [Installation](#Installation)
-    * [Usage](#Usage)
-    * [License](#License)
-    * [Contributing](#Contributing)
-    * [Tests](#Tests)
+'A simplified way to write a quality README.md for your next open source project.'
 
-  ## Installation
-  undefined
+## Table of Contents
 
-  ## Usage
-  "Run the index.js file in VS code's integrated terminal to fill out prompts within the command line. Your new README will generate within the README.md file! Use for any project requiring a quality README.md."
-  
-  ##License
-   is the chosen license for this project.
-  * undefined
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [License](#License)
+- [Contributing](#Contributing)
+- [Tests](#Tests)
 
-  ## Contributing
-  "Feel free to use this for good."
+## Installation
 
-  ## Tests
-  "No current tests at this time."
+undefined
 
-  ## Questions
-  Check out my GitHub at https://.com'kheeb'
-  "Reach out to me via email if needed!"
-  'karaheeb@gmail.com'
+## Usage
+
+'git clone the repo, then run node index.js while in the same directory to fill out prompts, and you will find your README.md file has been created.'
+
+##License
+is the chosen license for this project.
+
+- undefined
+
+## Contributing
+
+'Use for good.'
+
+## Tests
+
+'Coming soon!'
+
+## Questions
+
+Check out my GitHub at https://.com'kheeb'
+'Reach out via email if needed.'
+'karaheeb@gmail.com'

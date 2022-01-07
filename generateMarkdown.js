@@ -7,8 +7,6 @@ function renderLicenseBadge(license) {
         return `![MIT License](https://img.shields.io/badge/license-MIT-blue)`
     } else if (license == 'The Unlicense') {
         return `![Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)`
-    } else if (license == 'Creative Commons') {
-        return `![CC-0 License](https://img.shields.io/badge/License-CC--0-blue.svg)`
     } else if (license == 'None') {
         return ''
     }
@@ -23,8 +21,6 @@ function renderLicenseLink(license) {
         return `https://opensource.org/licenses/MIT`
     } else if (license == 'The Unlicense') {
         return `https://unlicense.org/`
-    } else if (license == 'Creative Commons') {
-        return `https://creativecommons.org/licenses/by/4.0/legalcode`
     } else if (license == 'None') {
         return ''
     }
@@ -35,6 +31,15 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
     if (license) {
         return license + ` is the chosen license for this project.`
+    } else {
+        return ''
+    }
+}
+
+// write function to link github
+function renderGithub(username) {
+    if (username) {
+        return `Check out my GitHub at https://.com` + username
     } else {
         return ''
     }
@@ -62,7 +67,7 @@ function generateMarkdown(data) {
   
   ##License
   ${renderLicenseSection(data.license)}
-  * ${renderLicenseLink9(data.license)}
+  * ${renderLicenseLink(data.license)}
 
   ## Contributing
   ${data.contributing}
@@ -71,6 +76,7 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
+  ${renderGithub(data.username)}
   ${data.contact}
   ${data.email}
 `;

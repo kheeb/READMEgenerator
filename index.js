@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
-    const inquirer = require('inquirer');
-    const fs = require('fs');
-    const generateMarkdown = require('./generateMarkdown.js');
+const fs = require('fs');    
+const inquirer = require('inquirer');
+const generateMarkdown = require('./generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -17,7 +17,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'projectName',
+        name: 'projectTitle',
         message: 'What would you like to name your project?'
     },
     {
@@ -41,7 +41,7 @@ const questions = [
         type: 'checkbox',
         name: 'license',
         message: 'Check the box to select your license of choice.',
-        choices: ['GNU General Public', 'MIT', 'The Unlicense', 'Creative Commons', 'None']
+        choices: ['GNU General Public', 'MIT', 'The Unlicense', 'None']
     },
     {
         type: 'input',

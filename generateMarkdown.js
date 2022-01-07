@@ -2,11 +2,11 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
     if (license == 'GNU General Public') {
-        return `[![GNU License](https://img.shields.io/badge/License-GPLv3-blue.svg)`
+        return `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`
     } else if (license == 'MIT') {
-        return `![MIT License](https://img.shields.io/badge/license-MIT-blue)`
+        return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
     } else if (license == 'The Unlicense') {
-        return `![Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)`
+        return `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`
     } else if (license == 'None') {
         return ''
     }
@@ -16,7 +16,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
     if (license == 'GNU Generasl Public') {
-        return `https://www.gnu.org/licenses/gpl-3.0.en.html`
+        return `https://www.gnu.org/licenses/gpl-3.0`
     } else if (license == 'MIT') {
         return `https://opensource.org/licenses/MIT`
     } else if (license == 'The Unlicense') {
@@ -53,7 +53,7 @@ function generateMarkdown(data) {
   ${data.description}
 
   ## Table of Contents
-  * [Installation](#Installation)
+    * [Installation](#Installation)
     * [Usage](#Usage)
     * [License](#License)
     * [Contributing](#Contributing)
@@ -65,7 +65,7 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
   
-  ##License
+  ## License
   ${renderLicenseSection(data.license)}
   * ${renderLicenseLink(data.license)}
 

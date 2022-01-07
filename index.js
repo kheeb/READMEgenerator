@@ -34,6 +34,11 @@ const questions = [
     },
     {
         type: 'input',
+        name: 'install',
+        message: 'What are the steps required to install your project?'
+    }
+    {
+        type: 'input',
         name: 'usage',
         message: 'Provide instructions and examples for use.'
     },

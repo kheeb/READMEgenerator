@@ -39,7 +39,7 @@ function renderLicenseSection(license) {
 // write function to link github
 function renderGithub(username) {
     if (username) {
-        return `Check out my GitHub at https://.com` + username
+        return `Check out my GitHub at https://github.com/` + username
     } else {
         return ''
     }

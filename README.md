@@ -1,7 +1,7 @@
 # READMEgenerator
 
   ## Description
-  Makes a readme file for you
+  This app allows the user to dynamically create a README.md file within their terminal for their latest project!
 
   ## Table of Contents
     * [Installation](#Installation)
@@ -11,23 +11,23 @@
     * [Tests](#Tests)
 
   ## Installation
-  git clone
+  Clone the repo down to your local machine, then open the index.js file inside the integrated terminal.
 
   ## Usage
-  run in terminal
+  While inside the terminal, run 'node index.js' and follow the prompts to create your file.
   
   ## License
-  GNU General Public is the chosen license for this project.
-  * https://www.gnu.org/licenses/gpl-3.0
-  * [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+  MIT is the chosen license for this project.
+  * https://opensource.org/licenses/MIT
+  * [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   ## Contributing
-  please don't
+  Feel free to use!
 
   ## Tests
-  coming soon
+  Coming soon!
 
   ## Questions
   Check out my GitHub at https://github.com/kheeb
-  email me
+  Email me please!
   karaheeb@gmail.com
